@@ -6,10 +6,10 @@ const SecondsCounter = (props) => {
 	return (
 		<div className="container">
 			<div className="counter">
-				<p>1</p>
-				<p>1</p>
-				<p>1</p>
-				<p>1</p>
+				<p>{props.numSix}</p>
+				<p>{props.numFive}</p>
+				<p>{props.numFour}</p>
+				<p>{props.numThree}</p>
 				<p>{props.numTwo}</p>
 				<p>{props.numOne}</p>
 			</div>
@@ -22,6 +22,10 @@ const SecondsCounter = (props) => {
 SecondsCounter.propTypes = {
 	numOne: PropTypes.number,
 	numTwo: PropTypes.number,
+	numThree: PropTypes.number,
+	numFour: PropTypes.number,
+	numFive: PropTypes.number,
+	numSix: PropTypes.number,
 }
 
 
